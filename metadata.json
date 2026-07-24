@@ -1,0 +1,6 @@
+{
+  "name": "DataStruct Studio",
+  "description": "Interactive Data Structures & Algorithms Learning Platform with visualizers, quizzes, code, and games.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

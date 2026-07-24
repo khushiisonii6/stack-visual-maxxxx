@@ -1,0 +1,55 @@
+/* DataStruct Studio - Global Stylesheet & Custom Utilities */
+
+:root {
+  --color-bg-slate-950: #020617;
+  --color-bg-slate-900: #0f172a;
+  --color-border-slate-800: #1e293b;
+  --color-indigo-600: #4f46e5;
+  --color-indigo-500: #6366f1;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg-slate-950);
+  color: #f8fafc;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-bg-slate-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-slate-800);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* High Density Grid Overlay Effect */
+.bg-density-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+/* Animation utilities */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.25s ease-out forwards;
+}
